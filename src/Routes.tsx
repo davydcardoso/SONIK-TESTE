@@ -5,6 +5,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 const { Navigator, Screen } = createStackNavigator();
 
 import loginView from './View/Login.View';
+import cadastroView from './View/Cadastro.View';
 
 export default function Route(){
     return (
@@ -14,6 +15,10 @@ export default function Route(){
                     name="LOGIN_VIEW"
                     component={loginView}
                 /> 
+                <Screen
+                    name="CADASTRO_VIEW"
+                    component={cadastroView}
+                />
             </Navigator>
         </NavigationContainer>
     );
